@@ -1,0 +1,22 @@
+.navlearn{
+    text-decoration: none;
+    padding: 2px;
+    margin: 5px;
+    width: 100%;
+    height: 56%;
+    background-color: #ceff12;
+}
+.navlearn a{
+    color: black;
+    margin: auto 5px;
+    text-decoration: none;
+}
+.navlearn a:hover{
+    color: blue;
+    text-decoration: none;
+}
+.navlearn NavDropdown.Item a:hover{
+    color: blue;
+    text-decoration: none;
+    background-color: white;
+}
