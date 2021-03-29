@@ -41,11 +41,11 @@ submitHandler=(e)=>{
             <form onSubmit={(event)=>{this.submitHandler(event)}}>
                 <div className="form-group">
                    <b> <label htmlFor="name">Username:</label></b>
-                    <input type="text" name="username" className="form-control"></input>
+                    <input type="text" name="username" id= "name" className="form-control"></input>
                 </div>
                 <div className="form-group">
                   <b> <label htmlFor="password">Password:</label></b> 
-                    <input type="password" name="password" className="form-control"></input>
+                    <input type="password" name="password"id ="password" className="form-control"></input>
                 </div>
                 <div className="form-group">
                     <button type="submit">Submit</button>
