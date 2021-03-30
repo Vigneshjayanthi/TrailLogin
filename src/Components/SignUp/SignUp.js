@@ -9,19 +9,19 @@ const signUp = () =>{
         </div>
         <form>
             <div className="form-group">
-                <label htmlFor="firstName">First Name:&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="firstName"><b>First Name:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="text" className="form-control" name="firstname" id ="firstName" required/>
             </div>
             <div className="form-group">
-                <label htmlFor="lastName">Last Name:&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="lastName"> <b>Last Name:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="text" className="form-control" name="lastname" id ="lastName" required/>
             </div>
             <div className="form-group">
-                <label htmlFor="email">Email Address:&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="email"> <b>EmailAddress:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="email" className="form-control" name="Email" id ="email" required/>
             </div>
             <div className="form-group">
-                <label htmlFor="phoneNumber">Phone number:&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="phoneNumber"><b>Phone number:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="number" className="form-control" name="Phonenumber" id="phonenumber" required maxLength='10' minLength='10'/>
             </div>
 
