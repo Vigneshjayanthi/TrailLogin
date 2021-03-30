@@ -8,11 +8,11 @@
 .navlearn a{
     color:#DCFD1D;
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 18px;
     margin: auto 5px;
     text-decoration: none;
 }
 .navlearn a:hover{
-    color: black;
+    color:white;
     text-decoration: none;
 }

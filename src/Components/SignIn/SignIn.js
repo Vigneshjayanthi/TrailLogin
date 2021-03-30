@@ -1,64 +1,57 @@
 
 
-import  React,{ Component } from 'react';
+import React, { Component } from 'react';
 //import { Col, Container, Row } from 'react-bootstrap';
 import './SignIn.css';
 
 
 
-class signIn extends Component{
-    state={
-        Username:"",
-        password:"",
-        ErrorMessage:null
+class signIn extends Component {
+    state = {
+        Username:null,
+        password:null,
+        ErrorMessage: null
     }
-   
-submitHandler=(e)=>{
-  e.preventDefault()
-  //  console.log(e.target.elements.username.value)
-    this.setState({Username:e.target.elements.username.value, password:e.target.elements.password.value, ErrorMessage:'The username or password entered is incorrect'})
-   // console.log(this.state.Username+ ' '+ this.state.password)
-   
-}
+     
+    submitHandler = (e) => {
+        e.preventDefault()
+        console.log(e.target.elements.username.value," ",e.target.elements.password.value)
+        if(e.target.elements.username.value==="vignesh" && e.target.elements.password.value==="Vikki@6498"){
+                this.props.history.push('/');
+        }
+        else{
+            this.setState({ErrorMessage:"The username or password is incorrect"})
+        }
+    }
 
-    render(){
-    //   const styling=[];
-    //   if(this.state.ErrorMessage!==' '){
-    //       styling.push('error')
-    //   }
-    //   else{
-    //       styling.push('')
-    //   }
- 
-    return (
-       
-        <div className="SignIn col-md-4 col-sm-12">
-        <div className="content">
-            <h3>Login</h3>
-            {/* {this.state.Username}
-            {this.state.password} */}
-        </div>
-            <form onSubmit={(event)=>{this.submitHandler(event)}}>
-                <div className="form-group">
-                   <b> <label htmlFor="name">Username:</label></b>
-                    <input type="text" name="username" id= "name" className="form-control"></input>
+    render() {
+
+        return (
+
+            <div className="SignIn col-md-4 col-sm-12">
+                <div className="content">
+                    <h3>LOGIN</h3>
                 </div>
-                <div className="form-group">
-                  <b> <label htmlFor="password">Password:</label></b> 
-                    <input type="password" name="password"id ="password" className="form-control"></input>
-                </div>
-                <div className="form-group">
-                    <button type="submit">Submit</button>
-                </div>     
-                {this.state.Username==="vignesh" && this.state.password==="Vikki@6498" ? window.location.href="/sample":
-                <div className={this.state.ErrorMessage!== null? 'error':null}><p>{this.state.ErrorMessage}</p></div>}
-            </form>
-           
-    </div>
-    )
+                <form onSubmit={(event) => { this.submitHandler(event) }}>
+                    <div className="form-group">
+                        <b> <label htmlFor="name">Username:</label></b>
+                        <input type="text" name="username" id="name" className="form-control" onChange={(event)=>{this.setState({Username:{...event.target.value}})}}></input>
+                    </div>
+                    <div className="form-group">
+                        <b> <label htmlFor="password">Password:</label></b>
+                        <input type="password" name="password" id="password" className="form-control" onChange={(event)=>{this.setState({password:{...event.target.value}})}}></input>
+                    </div>
+                    <div className="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                    {<div className={this.state.ErrorMessage !== null ? 'error' : null}><p>{this.state.ErrorMessage}</p></div>}
+                </form>
+
+            </div>
+        )
 
 
-}
+    }
 }
 
 export default signIn;

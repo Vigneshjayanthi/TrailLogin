@@ -5,7 +5,7 @@ const signUp = () =>{
     return (
     <div className="Signup col-md-4 col-sm-12">
         <div>
-            <h3 style={{color:'white', textAlign:'center'}}>Sign Up</h3>
+            <h3 style={{color:'#FFd700', textAlign:'center'}}>SIGN UP</h3>
         </div>
         <form>
             <div className="form-group">
@@ -17,11 +17,11 @@ const signUp = () =>{
                 <input type="text" className="form-control" name="lastname" id ="lastName" required/>
             </div>
             <div className="form-group">
-                <label htmlFor="email"> <b>EmailAddress:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="email"> <b>Email Address:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="email" className="form-control" name="Email" id ="email" required/>
             </div>
             <div className="form-group">
-                <label htmlFor="phoneNumber"><b>Phone number:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
+                <label htmlFor="phoneNumber"><b>Phone Number:</b>&nbsp;<span style={{color:'#fe1212'}}>*</span></label>
                 <input type="number" className="form-control" name="Phonenumber" id="phonenumber" required maxLength='10' minLength='10'/>
             </div>
 
