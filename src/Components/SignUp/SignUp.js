@@ -5,7 +5,7 @@ const signUp = () =>{
     return (
     <div className="Signup col-md-4 col-sm-12">
         <div>
-            <h3 style={{color:'green', textAlign:'center'}}>Sign Up</h3>
+            <h3 style={{color:'white', textAlign:'center'}}>Sign Up</h3>
         </div>
         <form>
             <div className="form-group">
@@ -28,7 +28,6 @@ const signUp = () =>{
                 <button  className="buttonstyle" type ="submit">Submit</button>
 
         </form> 
-
     </div>)
 }
 

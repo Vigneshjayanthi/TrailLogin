@@ -7,14 +7,11 @@ import {Link} from 'react-router-dom';
 import './Navigation.css'
 import { NavDropdown } from 'react-bootstrap'
 
-
-
-
 const naviagation =()=>{
     return(
         <header>
       <NavBar className="navlearn" expand="md">
-          <NavbarBrand><Link to='/'>Test App</Link></NavbarBrand>
+          <NavbarBrand><Link to='/'>VSI Gift</Link></NavbarBrand>
           <NavbarToggle aria-controls="test-app"></NavbarToggle>
           <NavbarCollapse id="test-app"  className="justify-content-end" >
               <Nav >
