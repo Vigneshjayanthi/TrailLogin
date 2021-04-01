@@ -1,5 +1,7 @@
 .backgroundColor{
-    background-image: linear-gradient(to bottom,blue, yellow);
-    background-position: center;
-    height: 100%;
+    background-image: linear-gradient(to bottom,rgb(242, 242, 253), rgb(0, 238, 255));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

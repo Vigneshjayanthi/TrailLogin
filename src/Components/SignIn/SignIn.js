@@ -1,6 +1,7 @@
 
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 //import { Col, Container, Row } from 'react-bootstrap';
 import './SignIn.css';
 
@@ -27,7 +28,7 @@ class signIn extends Component {
     render() {
 
         return (
-
+            <div>
             <div className="SignIn col-md-4 col-sm-12">
                 <div className="content">
                     <h3>LOGIN</h3>
@@ -45,9 +46,15 @@ class signIn extends Component {
                         <button type="submit">Submit</button>
                     </div>
                     {<div className={this.state.ErrorMessage !== null ? 'error' : null}><p>{this.state.ErrorMessage}</p></div>}
-                </form>
-
+                    <div className="form-group">
+                <p className="forgetpassword"><a href="/forgetpassword">Forget Password</a></p>
             </div>
+                </form>
+            </div>
+            <div className="createAccount">
+            <p><b>Create an Account</b> <Link to='/signup'>Click here</Link></p>
+          </div>
+         </div>
         )
 
 
